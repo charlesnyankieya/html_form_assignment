@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<script src="app.js"></script>
+<link rel="shortcut icon" href="../Html_forms/Images/icons8-student-50.png" type="image/x-icon">
+<title>Student Registration</title>
+</head>
+<body>
+
+<h1>Student Registration Form</h1>
+<h2>Welcome to student Registration</h2><br>
+
+
+<form action="/register" method="post">
+    <fieldset>
+        <legend>Details</legend>
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+  
+  <label for="dob">Date of Birth:</label>
+  <input type="date" id="dob" name="dob" required><br><br>
+  
+  <label for="gender">Gender:</label>
+  <select id="gender" name="gender" required>
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+  </select><br><br>
+  
+  <label for="address">Address:</label>
+  <textarea id="address" name="address" rows="2" required placeholder="11, Nairobi, 00100"></textarea><br><br>
+  
+  <label for="telephone">Telephone:</label>
+  <input type="tel" id="telephone" name="telephone" required placeholder="0712345678"><br><br>
+  
+  <label for="email">Email Address:</label>
+  <input type="email" id="email" name="email" required placeholder="youremail@email.com"><br><br>
+  
+  <label for="course">Course:</label>
+  <input type="text" id="course" name="course" required placeholder="Bachelor of Arts"><br><br>
+  
+  <button type="submit" id="submit">Register</button>
+  <button type="button" onclick="reloadPage()" id="cancel">Cancel</button>
+</fieldset>
+</form>
+
+</body>
+</html>
